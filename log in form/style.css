@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#6a11cb,#2575fc);
+    overflow: hidden;
+}
+.form-container{
+    position: relative;
+    width: 400px;
+    background: rgba(255, 255, 255, .1);
+    padding: 2rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+border-radius: 20px;
+backdrop-filter: blur (10px);
+}
+.form-toggle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.form-toggle button{
+position: relative;
+background: transparent;
+border: none;
+color: #fff;
+font-size: 1.2rem;
+cursor: pointer;
+padding: 0.5rem 1.5rem;
+transition: color .3s ease;
+}
+.form-toggle button.active{
+color: #ff6b6b;
+}
+.form-toggle button::after{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background: #ff6b6b;
+    transition: all .3s ease;
+
+}
+.form-toggle button.active::after{
+width: 100%;
+left: 0;
+}
+.forms{
+    overflow:hidden;
+}
+.inner_forms{
+    width: 200%;
+    display: flex;
+    overflow: hidden;
+    /* transition: ma; */
+}
+.form{
+    display: flex;
+    flex-flow: column;
+    height: 1.5rem;
+    width: 50%;
+}
+.form h2{
+    color:#fff;
+    text-align: center;
+    margin-bottom: 1rem; 
+}
+.input-group{
+    position: relative;
+}
+.input-group input{
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    border:none;
+
+}
+
+
+
+
+
+
+
