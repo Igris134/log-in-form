@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign-up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-toggle">
+        <button class="active" id="login-toggle">LogIn</button>
+        <button  id="Signup-toggle">Signup</button>
+    </div>
+    <div class="forms">
+        <div class="inner_forms" id="inner_forms">
+            <form action="" class="form" id="login"></form>
+            <h2>Welcome Back!</h2>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type=" email" placeholder="Email" required>  
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type=" password" placeholder="Password" required>
+        </div>
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="#" id="signup-link"> Sign Up</a></p>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
